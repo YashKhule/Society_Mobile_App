@@ -1,0 +1,19 @@
+ion-content {
+    --ion-background-color: linear-gradient(to top, #bfefff 0%, #ffffff 100%);
+  }
+ion-list-header{
+    margin-right: 0.5cm;
+    margin-top: 1cm;
+    text-align: center;
+    font-family: 'Times New Roman';
+    
+  }
+  ion-card{
+    border-radius: 10px 0px 0px 10px;
+    background: -webkit-linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
+  background: -o-linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
+  background: -moz-linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
+  background: linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
+  
+    }
+  
