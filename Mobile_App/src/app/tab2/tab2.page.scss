@@ -1,31 +1,37 @@
 ion-content {
-    --ion-background-color: #fffff4;
+    --ion-background-color: linear-gradient(to top, #bfefff 0%, #ffffff 100%);
   }
-  ion-title{
-    margin: 5%;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  .card1{
-    --ion-background-color: #B0E2FF;
-  }
-  .card2{
-    --ion-background-color: #67C8FF;
-  }
-  .card3{
-    --ion-background-color: #5E99FF;
-  }
-  ion-card {
-    border-radius: 16px;
-    height: 10%;
-    width: 95%;
-    //margin-top: 10%;
-    font-family: 'Times New Roman';
-    color: black;
+    ion-title{
+      margin: 5%;
+      font-family: 'Times New Roman', Times, serif;
     }
-    .image{
-        border-radius: 16px;
-        height: 10%;
-        width: 95%;
-        margin-left: 2.5%;
-}
-    
+    h1{
+      text-align: center;
+      font-family: 'Times New Roman';
+    }
+    p{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .picture{
+      margin-right:10px;
+      height: 80px;
+    }
+    .card1{
+      --ion-background-color: #B0E2FF;
+    }
+    .card2{
+      --ion-background-color: #67C8FF;
+    }
+    .card3{
+      --ion-background-color: #5E99FF;
+    }
+    ion-card {
+      border-radius: 16px;
+      height: 10%;
+      width: 95%;
+      //margin-top: 10%;
+      font-family: 'Times New Roman';
+      color: black;
+      }
+       
