@@ -16,6 +16,7 @@ import { MembersComponent } from './members/members.component';
 import { SocietyexpenseComponent } from './societyexpense/societyexpense.component';
 import { NoticesComponent } from './notices/notices.component';
 import { RemindersComponent } from './reminders/reminders.component';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { RemindersComponent } from './reminders/reminders.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

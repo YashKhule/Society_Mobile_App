@@ -11,13 +11,14 @@ export class HomeComponent implements OnInit {
 
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
+  dateToday: number = Date.now();
   constructor(private observer: BreakpointObserver,
     private route:Router) { }
 
   ngOnInit(): void {
   }
   ngAfterViewInit() {
-    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+    this.observer.observe(['(max-width: 768px)']).subscribe((res) => {
       if (res.matches) {
         this.sidenav.mode = 'over';
         this.sidenav.close();

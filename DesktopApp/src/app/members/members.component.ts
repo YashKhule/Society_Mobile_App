@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./members.component.css']
 })
 export class MembersComponent implements OnInit {
-
+dateToday:number=Date.now();
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
   constructor(private observer: BreakpointObserver,

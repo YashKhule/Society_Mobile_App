@@ -10,7 +10,7 @@
     <span class="orchid">ORCHID<span class="homes">HOMES</span></span>
 </mat-toolbar>
 
-<mat-sidenav-container>
+<mat-sidenav-container >
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
 
         <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" /> -->
@@ -50,9 +50,140 @@
         </button>
 
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content class="bg-light">
         <div class="content mat-elevation-z8">
-            Main content here!
+            <div class="row">
+                <div class="col-lg-12" style="margin-top: 3%;">
+                    <h3 class="expenseOverview">EXPENSES OVERVIEW</h3>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 ">
+                    <mat-card>
+                        <mat-card-content>
+                            <h3 class="amountCard">Recieved Amount</h3>
+                            <h3 class="amount">Rs. 1500</h3>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="col-lg-4 ">
+                    <mat-card>
+                        <mat-card-content>
+                            <h3 class="amountCard">Pending Amount</h3>
+                            <h3 class="amount">Rs. 2567</h3>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <!--Mat-List Started-->
+            <div style="margin-top: 3%;">
+                <mat-divider></mat-divider>
+                <mat-list role="list">
+                  <div class="row">
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Flat No. A/17</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Paid Rs. 800</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">March</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">{{ dateToday  | date: "mediumDate" }}</mat-list-item>
+                      </div>
+                  </div>
+                </mat-list>
+                <mat-divider></mat-divider>
+                <mat-list role="list">
+                  <div class="row">
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Flat No. A/17</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Paid Rs. 800</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">March</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">{{ dateToday  | date: "mediumDate" }}</mat-list-item>
+                      </div>
+                  </div>
+                </mat-list>
+                <mat-divider></mat-divider>
+                <mat-list role="list">
+                  <div class="row">
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Flat No. A/17</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Paid Rs. 800</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">March</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">{{ dateToday  | date: "mediumDate" }}</mat-list-item>
+                      </div>
+                  </div>
+                </mat-list>
+                <mat-divider></mat-divider>
+                <mat-list role="list">
+                  <div class="row">
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Flat No. A/17</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">Paid Rs. 800</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">March</mat-list-item>
+                      </div>
+                      <div class="col-lg-3">
+                          <mat-list-item role="listitem">{{ dateToday  | date: "mediumDate" }}</mat-list-item>
+                      </div>
+                  </div>
+                </mat-list>
+                  <mat-divider></mat-divider>
+                  <mat-list role="list">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">Flat No. A/17</mat-list-item>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">Paid Rs. 800</mat-list-item>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">March</mat-list-item>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">{{ dateToday  | date: "mediumDate" }}</mat-list-item>
+                        </div>
+                    </div>
+                  </mat-list>
+                  <mat-divider></mat-divider>
+                  <mat-list role="list">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">Flat No. A/17</mat-list-item>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">Paid Rs. 800</mat-list-item>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">March</mat-list-item>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-list-item role="listitem">{{ dateToday  | date: "mediumDate" }}</mat-list-item>
+                        </div>
+                    </div>
+                  </mat-list>
+                  
+            </div>
+            <!--Mat-List Ended-->
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
