@@ -1,0 +1,58 @@
+<mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    <span class="orchid">ORCHID<span class="homes">HOMES</span></span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+        <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" /> -->
+
+        <h1 class="name">John Smith</h1>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" routerLink="/home">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-button class="menu-button  nav-active" routerLink="/members">
+            <mat-icon>person</mat-icon>
+            <span>Members</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/societyexpense">
+            <mat-icon>paid</mat-icon>
+            <span>Society Expenses</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" routerLink="/notices">
+            <mat-icon>note_add</mat-icon>
+            <span>Notices</span>
+        </button>
+
+        <button mat-button class="menu-button" routerLink="/reminders">
+            <mat-icon>notifications_active</mat-icon>
+            <span>Reminders</span>
+        </button>
+
+        <button mat-button class="menu-button" (click)="logout()">
+            <mat-icon>door_back</mat-icon>
+            <span>LogOut</span>
+        </button>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+            Main content here!
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
