@@ -50,44 +50,63 @@
         </button>
 
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content class="bg-light">
         <div class="content mat-elevation-z8">
             <!--header List Starts-->
             <mat-divider></mat-divider>
-            <mat-list role="list">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <mat-list-item class="memberTitle" >Name</mat-list-item>
-                    </div>
-                    <div class="col-lg-4">
-                        <mat-list-item class="memberTitle">House No.</mat-list-item>
-                    </div>
-                    <div class="col-lg-3">
-                        <mat-list-item class="memberTitle">Unit Occupied</mat-list-item>
-                    </div>
-                </div>
-              </mat-list>
+            <mat-card>
+                <mat-card-content>
+                    <mat-list role="list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <mat-list-item class="membersOverview"><mat-icon>person</mat-icon> Members</mat-list-item>
+                            </div>
+                            <div class="col-lg-4">
+                                <mat-list-item class="membersOverview">
+                                    <div class="register-form">
+                                        <form class="form-inline">
+                                          <div class="form-group">
+                                              <mat-icon>search</mat-icon>
+                                              <input type="text" class="form-control" placeholder="Search">
+                                          </div>
+                                          </form>
+                                        </div>
+                                </mat-list-item>
+                            </div>
+                            <div class="col-lg-4">
+                                <mat-list-item class="buttonLabel">
+                                    <button type="button" name="add"  class="btn-md buttonAdd">  Add New Member </button>
+                                </mat-list-item>
+                            </div>
+                        </div>
+                      </mat-list>
+                </mat-card-content>
+            </mat-card>
             <!--header List Ends-->
 
             <!--Title List Starts-->
             <mat-divider></mat-divider>
-            <mat-list role="list">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <mat-list-item class="memberTitle" >Name</mat-list-item>
-                    </div>
-                    <div class="col-lg-4">
-                        <mat-list-item class="memberTitle">House No.</mat-list-item>
-                    </div>
-                    <div class="col-lg-3">
-                        <mat-list-item class="memberTitle">Unit Occupied</mat-list-item>
-                    </div>
-                </div>
-                </mat-list>
+            <mat-card>
+                <mat-card-content>
+                    <mat-list role="list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <mat-list-item class="memberTitle" >Name</mat-list-item>
+                            </div>
+                            <div class="col-lg-4">
+                                <mat-list-item class="memberTitle">House No.</mat-list-item>
+                            </div>
+                            <div class="col-lg-3">
+                                <mat-list-item class="memberTitle">Unit Occupied</mat-list-item>
+                            </div>
+                        </div>
+                        </mat-list>
+                </mat-card-content>
+            </mat-card>
             <!--Title List Ends-->
             
             <!--Mat-List Started-->
-            <div style="margin-top: 3%;">
+            <div >
             <mat-divider></mat-divider>
                 <mat-list role="list">
                 <div class="row">
