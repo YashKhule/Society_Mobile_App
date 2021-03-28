@@ -17,6 +17,19 @@ import { SocietyexpenseComponent } from './societyexpense/societyexpense.compone
 import { NoticesComponent } from './notices/notices.component';
 import { RemindersComponent } from './reminders/reminders.component';
 import {MatListModule} from '@angular/material/list';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import { AddmemberComponent } from './addmember/addmember.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDialogModule} from "@angular/material/dialog";
+import { MembersdetailsComponent } from './membersdetails/membersdetails.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { AddpaymentComponent } from './addpayment/addpayment.component';
+import { AddsocietyexpensesComponent } from './addsocietyexpenses/addsocietyexpenses.component';
+import { AddnoticeComponent } from './addnotice/addnotice.component';
+import { AddreminderComponent } from './addreminder/addreminder.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +38,13 @@ import {MatListModule} from '@angular/material/list';
     MembersComponent,
     SocietyexpenseComponent,
     NoticesComponent,
-    RemindersComponent
+    RemindersComponent,
+    AddmemberComponent,
+    MembersdetailsComponent,
+    AddpaymentComponent,
+    AddsocietyexpensesComponent,
+    AddnoticeComponent,
+    AddreminderComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +56,15 @@ import {MatListModule} from '@angular/material/list';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatSelectModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -142,34 +142,9 @@ border-bottom-width: 1px;
 border-radius: 0;
 padding-left: 0;
 }
-
+.example-full-width{
+width: 80%;
+}
 .addTransaction{
-height: calc(95vh - 65px);
-}
-.noticeTitle{
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 25px;
-font-weight: bold;
-color: #024591;
-text-decoration: underline;
-text-align: center;
-}
-.buttonSave{
-text-align: center;
-color: white;
-background:#002b5c;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: bold;
-padding: 3%;
-letter-spacing: 1px;
-border-radius: 30px;
-}
-
-mat-cell{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
-}
-mat-header-cell{
-    font-size: 18px;
-    text-align: center;
+    height: calc(95vh - 65px);
 }

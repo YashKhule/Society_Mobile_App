@@ -27,8 +27,15 @@ dateToday:number=Date.now();
       }
     });
   }
+  
 
   logout(){
     this.route.navigateByUrl('/login');
+  }
+  addMember(){
+    this.route.navigateByUrl('/addmember');
+  }
+  memberDetails(){
+    this.route.navigateByUrl('/membersdetails');
   }
 }

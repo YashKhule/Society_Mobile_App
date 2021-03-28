@@ -2,23 +2,24 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import {Router} from '@angular/router';
+
+   
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-addmember',
+  templateUrl: './addmember.component.html',
+  styleUrls: ['./addmember.component.css']
 })
-export class HomeComponent implements OnInit {
+export class AddmemberComponent implements OnInit {
 
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
-  dateToday: number = Date.now();
   constructor(private observer: BreakpointObserver,
     private route:Router) { }
 
   ngOnInit(): void {
   }
   ngAfterViewInit() {
-    this.observer.observe(['(max-width: 768px)']).subscribe((res) => {
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
       if (res.matches) {
         this.sidenav.mode = 'over';
         this.sidenav.close();
@@ -32,7 +33,13 @@ export class HomeComponent implements OnInit {
   logout(){
     this.route.navigateByUrl('/login');
   }
-  addTransaction(){
-    this.route.navigateByUrl('/addpayment');
+  save(){
+    alert("Member Added");
+    this.route.navigateByUrl('/members');
   }
+
+  cancel(){
+    this.route.navigateByUrl('/members');
+  }
+ 
 }

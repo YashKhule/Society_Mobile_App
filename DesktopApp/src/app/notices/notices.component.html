@@ -10,14 +10,14 @@
     <span class="orchid">ORCHID<span class="homes">HOMES</span></span>
 </mat-toolbar>
 
-<mat-sidenav-container>
+<mat-sidenav-container >
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
 
         <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" /> -->
 
         <h1 class="name">John Smith</h1>
 
-        <mat-divider></mat-divider>
+        <mat-divider class="sidenavDivider"></mat-divider>
 
         <button mat-button class="menu-button" routerLink="/home">
             <mat-icon>home</mat-icon>
@@ -32,9 +32,9 @@
             <span>Society Expenses</span>
         </button>
 
-        <mat-divider></mat-divider>
+        <mat-divider class="sidenavDivider"></mat-divider>
 
-        <button mat-button class="menu-button nav-active" routerLink="/notices">
+        <button mat-button class="menu-button  nav-active" routerLink="/notices">
             <mat-icon>note_add</mat-icon>
             <span>Notices</span>
         </button>
@@ -52,7 +52,52 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <div class="content mat-elevation-z8">
-            Main content here!
+            <section class="bg-light">
+
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top: 3%;">
+                        <h3 class="noticeTitle">NOTICES</h3>
+                    </div>
+                </div>
+    
+                <!--Button row Starts-->
+                <div style="margin-top:3%;">
+                    <div class="row">
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="button" class="btn-block" class="buttonSave" (click)="addNotice()">Add Notice</button>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                    </div>
+                </div>
+                <!--Button Row Ends-->
+            </section>
+            <!--Mat-Table Started-->
+            <div style="margin-top:2%;">
+                <mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+
+                <!-- Date Column -->
+                    <ng-container matColumnDef="dateToday">
+                        <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{dateToday  | date: "mediumDate"}} </mat-cell>
+                    </ng-container>
+                    
+                    <!-- Notice Column -->
+                    <ng-container matColumnDef="notice">
+                        <mat-header-cell *matHeaderCellDef> Notice  </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.notice}} </mat-cell>
+                    </ng-container>
+                  
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+            </div>
+            <!--Mat-Table Ends-->
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

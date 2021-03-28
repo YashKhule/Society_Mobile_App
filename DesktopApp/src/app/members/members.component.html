@@ -17,7 +17,7 @@
 
         <h1 class="name">John Smith</h1>
 
-        <mat-divider></mat-divider>
+        <mat-divider class="sidenavDivider"></mat-divider>
 
         <button mat-button class="menu-button" routerLink="/home">
             <mat-icon>home</mat-icon>
@@ -32,7 +32,7 @@
             <span>Society Expenses</span>
         </button>
 
-        <mat-divider></mat-divider>
+        <mat-divider class="sidenavDivider"></mat-divider>
 
         <button mat-button class="menu-button" routerLink="/notices">
             <mat-icon>note_add</mat-icon>
@@ -50,11 +50,10 @@
         </button>
 
     </mat-sidenav>
-    <mat-sidenav-content class="bg-light">
+    <mat-sidenav-content>
         <div class="content mat-elevation-z8">
             <!--header List Starts-->
-            <mat-divider></mat-divider>
-            <mat-card>
+            <mat-card class="bg-light">
                 <mat-card-content>
                     <mat-list role="list">
                         <div class="row">
@@ -67,7 +66,7 @@
                                         <form class="form-inline">
                                           <div class="form-group">
                                               <mat-icon>search</mat-icon>
-                                              <input type="text" class="form-control" placeholder="Search">
+                                              <input type="search" class="form-control" placeholder="Search">
                                           </div>
                                           </form>
                                         </div>
@@ -75,7 +74,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <mat-list-item class="buttonLabel">
-                                    <button type="button" name="add"  class="btn-md buttonAdd">  Add New Member </button>
+                                    <button type="button" name="add"  class="btn-block buttonAdd" (click)="addMember()">  Add New Member </button>
                                 </mat-list-item>
                             </div>
                         </div>
@@ -85,7 +84,7 @@
             <!--header List Ends-->
 
             <!--Title List Starts-->
-            <mat-divider></mat-divider>
+            <mat-divider class="sidenavDivider"></mat-divider>
             <mat-card>
                 <mat-card-content>
                     <mat-list role="list">
@@ -106,9 +105,8 @@
             <!--Title List Ends-->
             
             <!--Mat-List Started-->
-            <div >
-            <mat-divider></mat-divider>
-                <mat-list role="list">
+            <div style="background-color: white;">
+                <mat-list role="list" (click)="memberDetails()">
                 <div class="row">
                     <div class="col-lg-4">
                         <mat-list-item role="listitem">Yash Khule</mat-list-item>

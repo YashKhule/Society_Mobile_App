@@ -28,14 +28,23 @@ letter-spacing: 1px;
 color: #002b5c;
 }
 
-.expenseOverview{
+.addPayment{
 font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 25px;
+font-size: 30px;
 font-weight: bold;
 color: #024591;
 text-decoration: underline;
-text-align: center;
 }
+
+.addExpenses{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 22px;
+font-weight: bold;
+color: #024591;
+padding-left: 2%;
+cursor: pointer;
+}
+
 .amountCard{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 20px;
@@ -142,18 +151,6 @@ border-bottom-width: 1px;
 border-radius: 0;
 padding-left: 0;
 }
-
-.addTransaction{
-height: calc(95vh - 65px);
-}
-.noticeTitle{
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 25px;
-font-weight: bold;
-color: #024591;
-text-decoration: underline;
-text-align: center;
-}
 .buttonSave{
 text-align: center;
 color: white;
@@ -165,11 +162,19 @@ letter-spacing: 1px;
 border-radius: 30px;
 }
 
-mat-cell{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+.buttonCancel{
+text-align: center;
+color: white;
+background:#434343;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+padding: 3%;
+letter-spacing: 1px;
+border-radius: 30px;
 }
-mat-header-cell{
-    font-size: 18px;
-    text-align: center;
+.example-full-width{
+width: 80%;
+}
+.addTransaction{
+height: calc(95vh - 65px);
 }
