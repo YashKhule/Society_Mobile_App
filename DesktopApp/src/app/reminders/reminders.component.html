@@ -98,7 +98,7 @@
                     <!-- Icon Column -->
                     <ng-container matColumnDef="reminderIcon">
                       <mat-header-cell *matHeaderCellDef> Send Reminder </mat-header-cell>
-                      <mat-cell *matCellDef="let element"> <mat-icon>send</mat-icon> </mat-cell>
+                      <mat-cell *matCellDef="let element"> <mat-icon matTooltip="Send Reminder" matTooltipPosition="above">send</mat-icon> </mat-cell>
                     </ng-container>
                   
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

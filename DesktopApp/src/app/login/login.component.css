@@ -1,72 +1,72 @@
-.ButtonViewAll{
-    text-align: center;
-    color: white;
-    background:#007FFF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    padding: 3%;
-    letter-spacing: 1px;
-    border-radius: 20px;
-    }
-    .LoginTitle{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 28px;
-    text-decoration: underline;
-    color: white;
-    text-align: center;
-    margin: 15px;
-    }
-    .LoginSubtitle{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: large;
-    margin-top: 3%;
-    color: #007FFF;
-    }
-    .register-form h1 {
-    font-size: 42px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 150px 0px;
-    line-height: 60px;
-    }
-    .register-form .form-control {
-    border: none;
-    background: none;
-    border-bottom: 1px solid #007FFF;
-    border-radius: 0px !important;
-    color: white;
-    }
-    .register-form .form-control:focus,
-    .register-form .form-control:hover{
-    border:none;
-    margin: 0 auto;
-    background: none;
-    box-shadow: none;
-    border-bottom: 1px solid white;
-    color: white;
-    }
-    label{
-    color: white;
-    }
-.orchid{
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: bold;
-font-size: 28px;
-text-decoration: underline;
-color: #007FFF;
-text-align: center;
-margin: 15px;
+.ButtonViewAll {
+  text-align: center;
+  color: white;
+  background: #007fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding: 3%;
+  letter-spacing: 1px;
+  border-radius: 20px;
 }
-.homes{
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: bold;
-font-size: 28px;
-text-decoration: underline;
-color: white;
-text-align: center;
-margin: 15px;
+.LoginTitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  margin: 15px;
+}
+.LoginSubtitle {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: large;
+  margin-top: 3%;
+  color: #007fff;
+}
+.register-form h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 150px 0px;
+  line-height: 60px;
+}
+.register-form .form-control {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #007fff;
+  border-radius: 0px !important;
+  color: white;
+}
+.register-form .form-control:focus,
+.register-form .form-control:hover {
+  border: none;
+  margin: 0 auto;
+  background: none;
+  box-shadow: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+label {
+  color: white;
+}
+.orchid {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: underline;
+  color: #007fff;
+  text-align: center;
+  margin: 15px;
+}
+.homes {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  margin: 15px;
 }

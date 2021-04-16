@@ -56,21 +56,29 @@
                 <h3 class="addmemberTitle" > ADD NEW MEMBER</h3> 
             </div>
             <!--Add MEmber Form Start-->
-            <form style="padding-top: 2%;">
+            <form style="padding-top: 2%;" [formGroup]="requiredForm" novalidate>
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6">
                         <mat-form-field class="example-full-width">
                             <mat-label>Name</mat-label>
-                            <input matInput type="text" placeholder="Enter Full Name ">
+                            <input matInput type="text" placeholder="Enter Full Name " formControlName="name">
                         </mat-form-field>
                    </div>
+
                 <div class="col-lg-4">
                         <mat-form-field class="example-full-width">
                             <mat-label>Email</mat-label>
-                            <input matInput type="email" placeholder="Ex.abc@gmail.com">
+                            <input matInput type="email" placeholder="Ex.abc@gmail.com" formControlName="email">
                         </mat-form-field>
                 </div>
+                <div *ngIf="requiredForm.controls['email'].invalid && requiredForm.controls['email'].touched"
+                    class="alert alert-danger">
+                    <div *ngIf="requiredForm.controls['email'].errors.required">
+                        Email is required.
+                    </div>
+                </div>
+
             </div>
 
             <div class="row">
@@ -78,19 +86,19 @@
                 <div class="col-lg-3">
                         <mat-form-field class="example-full-width">
                             <mat-label>Mobile No.</mat-label>
-                            <input matInput type="number"  placeholder="1234567890">
+                            <input matInput type="number"  placeholder="1234567890" formControlName="mobile">
                         </mat-form-field>
                 </div>
                 <div class="col-lg-3">
                         <mat-form-field class="example-full-width">
                             <mat-label>House No.</mat-label>
-                            <input matInput  type="number" placeholder="00">
+                            <input matInput  type="number" placeholder="00" formControlName="house">
                         </mat-form-field>
                 </div>
                 <div class="col-lg-3">
                         <mat-form-field class="example-full-width">
                             <mat-label>Registry Date</mat-label>
-                            <input matInput  type="date">
+                            <input matInput  type="date" formControlName="date">
                         </mat-form-field>
                 </div>
             </div>
@@ -100,7 +108,7 @@
                 <div class="col-lg-4">
                         <mat-form-field class="example-full-width">
                             <mat-label>Ownership</mat-label>
-                            <input matInput  type="text" placeholder="nth Owner">
+                            <input matInput  type="text" placeholder="nth Owner" formControlName="ownership">
                         </mat-form-field>
 
                         <!-- <mat-form-field>
@@ -125,7 +133,7 @@
                 <div class="col-lg-3">
                     <mat-form-field class="example-full-width">
                         <mat-label>Are You Authorized / RegisteredMember of Society</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="authorized">
                           <mat-option value="yes">YES</mat-option>
                           <mat-option value="no">NO</mat-option>
                         </mat-select>
@@ -134,7 +142,7 @@
                 <div class="col-lg-3">
                     <mat-form-field class="example-full-width">
                         <mat-label>Have You Received Share Certificates</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="sharecertificate">
                           <mat-option value="yes">YES</mat-option>
                           <mat-option value="no">NO</mat-option>
                         </mat-select>
@@ -143,7 +151,7 @@
                 <div class="col-lg-3">
                     <mat-form-field class="example-full-width">
                         <mat-label>Your Unit Occupied</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="unit">
                           <mat-option value="yes">SELF</mat-option>
                           <mat-option value="no">RENT</mat-option>
                           <mat-option value="no">EMPTY</mat-option>
@@ -157,7 +165,7 @@
                 <div class="col-lg-6">
                         <mat-form-field class="example-full-width">
                             <mat-label>If rented please mention Name</mat-label>
-                            <input matInput type="text" placeholder="Enter Full Name">
+                            <input matInput type="text" placeholder="Enter Full Name" >
                         </mat-form-field>
                    </div>
                 <div class="col-lg-4">
@@ -173,7 +181,7 @@
                 <div class="col-lg-5">
                     <mat-form-field class="example-full-width">
                         <mat-label>Have You Submitted Your Registry Copy to Society</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="registrycopy">
                           <mat-option value="yes">YES</mat-option>
                           <mat-option value="no">NO</mat-option>
                         </mat-select>
@@ -182,7 +190,7 @@
                 <div class="col-lg-5">
                     <mat-form-field class="example-full-width">
                         <mat-label>Have you submit nominee details ?</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="nominee">
                           <mat-option value="yes">YES</mat-option>
                           <mat-option value="no">NO</mat-option>
                         </mat-select>
@@ -195,7 +203,7 @@
                 <div class="col-lg-5">
                     <mat-form-field class="example-full-width">
                         <mat-label>Are you Endorse your name of 7/12 ?</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="endrose">
                           <mat-option value="yes">YES</mat-option>
                           <mat-option value="no">NO</mat-option>
                         </mat-select>
@@ -204,7 +212,7 @@
                 <div class="col-lg-5">
                     <mat-form-field class="example-full-width">
                         <mat-label>Are you paid Municipal Tax?</mat-label>
-                        <mat-select>
+                        <mat-select formControlName="municipaltax">
                           <mat-option value="yes">YES</mat-option>
                           <mat-option value="no">NO</mat-option>
                         </mat-select>
@@ -215,7 +223,7 @@
             <div class="row" style="padding-bottom: 3%;padding-top: 3%;">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-3">
-                    <button type="submit" name="save"  class="btn-block buttonSave" (click)="save()">Save</button>
+                    <button type="submit" name="save"  class="btn-block buttonSave">Save</button>
                 </div>
                 <div class="col-lg-3">
                     <button type="reset" name="cancel" class="btn-block buttonCancel" (click)="cancel()">Cancel</button>

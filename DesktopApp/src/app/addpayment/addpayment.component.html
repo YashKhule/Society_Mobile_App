@@ -60,14 +60,14 @@
                     <span class="addExpenses" (click)="addExpenses()">Add Society Expenses</span>
                 </div>
             </div>
-            <form style="padding-top: 2%;">
+            <form style="padding-top: 2%;" [formGroup]="requiredForm" novalidate>
 
                 <div class="row">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-11">
                             <mat-form-field class="example-full-width">
                                 <mat-label>Owner Name</mat-label>
-                                <input matInput type="text" placeholder="Enter Name">
+                                <input matInput type="text" placeholder="Enter Name" formControlName="ownername">
                             </mat-form-field>
                        </div>
 
@@ -78,13 +78,13 @@
                     <div class="col-lg-5">
                         <mat-form-field class="example-full-width">
                             <mat-label>House No.</mat-label>
-                            <input matInput  type="number" placeholder="00">
+                            <input matInput  type="number" placeholder="00" formControlName="houseno">
                         </mat-form-field>
                     </div>
                     <div class="col-lg-5">
                         <mat-form-field class="example-full-width">
                             <mat-label>Month</mat-label>
-                            <mat-select>
+                            <mat-select formControlName="month">
                               <mat-option value="jan">January</mat-option>
                               <mat-option value="feb">February </mat-option>
                               <mat-option value="march">March</mat-option>
@@ -107,7 +107,7 @@
                     <div class="col-lg-5">
                             <mat-form-field class="example-full-width">
                                 <mat-label>Payment Type</mat-label>
-                                <mat-select>
+                                <mat-select formControlName="paymentType">
                                     <mat-option value="cash">Cash</mat-option>
                                     <mat-option value="UPI">UPI</mat-option>
                                     <mat-option value="cheque">Chaque</mat-option>
@@ -118,7 +118,7 @@
                     <div class="col-lg-5">
                             <mat-form-field class="example-full-width">
                                 <mat-label>Payment Date</mat-label>
-                                <input matInput  type="date">
+                                <input matInput  type="date" formControlName="date">
                             </mat-form-field>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                 <div class="row" style="padding-bottom: 3%;padding-top: 3%;">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-3">
-                        <button type="submit" name="save"  class="btn-block buttonSave" (click)="save()">Save</button>
+                        <button type="submit" name="save"  class="btn-block buttonSave" (click)="myForm()">Save</button>
                     </div>
                     <div class="col-lg-3">
                         <button type="reset" name="cancel" class="btn-block buttonCancel" (click)="cancel()">Cancel</button>

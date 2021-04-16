@@ -30,6 +30,7 @@ import { AddpaymentComponent } from './addpayment/addpayment.component';
 import { AddsocietyexpensesComponent } from './addsocietyexpenses/addsocietyexpenses.component';
 import { AddnoticeComponent } from './addnotice/addnotice.component';
 import { AddreminderComponent } from './addreminder/addreminder.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +66,7 @@ import { AddreminderComponent } from './addreminder/addreminder.component';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

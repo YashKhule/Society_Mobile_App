@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+
 @Component({
   selector: 'app-addnotice',
   templateUrl: './addnotice.component.html',
@@ -13,8 +15,11 @@ export class AddnoticeComponent implements OnInit {
   dateToday:any=Date.now()
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
+  requiredForm: FormGroup;
   constructor(private observer: BreakpointObserver,
-    private route:Router) { }
+    private route: Router, private fb: FormBuilder) {
+     this.myForm();
+    }
 
   ngAfterViewInit() {
     this.observer.observe(['(max-width: 768px)']).subscribe((res) => {
@@ -31,9 +36,12 @@ export class AddnoticeComponent implements OnInit {
   logout(){
     this.route.navigateByUrl('/login');
   }
-  save(){
-    this.route.navigateByUrl('/notices');
-  }
+     myForm() {
+      this.requiredForm = this.fb.group({
+        noticeDate: ['', Validators.required],
+        notice: ['', Validators.required],
+      });
+   }
   cancel(){
     this.route.navigateByUrl('/notices');
   }
