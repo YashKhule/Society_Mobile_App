@@ -55,6 +55,10 @@ export class AddmemberComponent implements OnInit {
     this.route.navigateByUrl('/login');
   }
 
+  saveMember() {
+    
+  }
+
   cancel(){
     this.route.navigateByUrl('/members');
   }

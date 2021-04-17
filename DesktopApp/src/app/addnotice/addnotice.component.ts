@@ -45,5 +45,7 @@ export class AddnoticeComponent implements OnInit {
   cancel(){
     this.route.navigateByUrl('/notices');
   }
-
+  saveNotice() {
+  
+}
 }

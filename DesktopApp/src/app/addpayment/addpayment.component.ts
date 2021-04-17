@@ -53,5 +53,8 @@ export class AddpaymentComponent implements OnInit {
     this.route.navigateByUrl('/home');
   }
 
+  savePayment() {
+    
+  }
 
 }

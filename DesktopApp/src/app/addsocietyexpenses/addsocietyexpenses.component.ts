@@ -55,4 +55,8 @@ export class AddsocietyexpensesComponent implements OnInit {
   cancel(){
     this.route.navigateByUrl('/home');
   }
+
+  saveExpenses() {
+    
+  }
 }

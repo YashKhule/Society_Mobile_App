@@ -72,12 +72,12 @@
                             <input matInput type="email" placeholder="Ex.abc@gmail.com" formControlName="email">
                         </mat-form-field>
                 </div>
-                <div *ngIf="requiredForm.controls['email'].invalid && requiredForm.controls['email'].touched"
+                <!-- <div *ngIf="requiredForm.controls['email'].invalid && requiredForm.controls['email'].touched"
                     class="alert alert-danger">
                     <div *ngIf="requiredForm.controls['email'].errors.required">
                         Email is required.
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -223,7 +223,7 @@
             <div class="row" style="padding-bottom: 3%;padding-top: 3%;">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-3">
-                    <button type="submit" name="save"  class="btn-block buttonSave">Save</button>
+                    <button type="submit" name="save"  class="btn-block buttonSave" (click)="saveMember()">Save</button>
                 </div>
                 <div class="col-lg-3">
                     <button type="reset" name="cancel" class="btn-block buttonCancel" (click)="cancel()">Cancel</button>
