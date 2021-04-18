@@ -36,16 +36,22 @@ export class AddnoticeComponent implements OnInit {
   logout(){
     this.route.navigateByUrl('/login');
   }
-     myForm() {
-      this.requiredForm = this.fb.group({
-        noticeDate: ['', Validators.required],
-        notice: ['', Validators.required],
-      });
-   }
-  cancel(){
-    this.route.navigateByUrl('/notices');
-  }
-  saveNotice() {
+
+
+myForm() {
+this.requiredForm = this.fb.group({
+  noticeDate: ['', Validators.required],
+  notice: ['', Validators.required],
+});
+}
   
+cancel(){
+  this.route.navigateByUrl('/notices');
+}
+
+  saveNotice() {
+    console.warn(this.requiredForm.value);
+    alert('Notice Sent');
+    this.route.navigateByUrl('/notices');
 }
 }

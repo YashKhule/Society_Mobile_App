@@ -60,7 +60,7 @@
                     <span class="addExpenses" (click)="addExpenses()">Add Society Expenses</span>
                 </div>
             </div>
-            <form style="padding-top: 2%;" [formGroup]="requiredForm" novalidate>
+            <form style="padding-top: 2%;" [formGroup]="requiredForm"  (ngSubmit)="savePayment()" >
 
                 <div class="row">
                     <div class="col-lg-1"></div>
@@ -126,7 +126,7 @@
                 <div class="row" style="padding-bottom: 3%;padding-top: 3%;">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-3">
-                        <button type="submit" name="save"  class="btn-block buttonSave" (click)="savePayment()">Save</button>
+                        <button type="submit" name="save"  class="btn-block buttonSave" [disabled]="!requiredForm.valid">Save</button>
                     </div>
                     <div class="col-lg-3">
                         <button type="reset" name="cancel" class="btn-block buttonCancel" (click)="cancel()">Cancel</button>

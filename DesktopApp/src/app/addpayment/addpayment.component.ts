@@ -54,7 +54,9 @@ export class AddpaymentComponent implements OnInit {
   }
 
   savePayment() {
-    
+    console.warn(this.requiredForm.value);
+    alert('Payment Added Successfully');
+    this.route.navigateByUrl('/home');
   }
 
 }

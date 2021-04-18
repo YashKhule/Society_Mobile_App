@@ -36,7 +36,7 @@ export class AddmemberComponent implements OnInit {
      myForm() {
       this.requiredForm = this.fb.group({
         name: ['', Validators.required],
-        email: ['', Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")],
+        email: ['', Validators.required],
         mobile: ['', Validators.required ],
         house: ['', Validators.required],
         date: ['', Validators.required],
@@ -56,7 +56,9 @@ export class AddmemberComponent implements OnInit {
   }
 
   saveMember() {
-    
+    console.warn(this.requiredForm.value);
+    alert('Member Added Successfully');
+    this.route.navigateByUrl('/members');
   }
 
   cancel(){

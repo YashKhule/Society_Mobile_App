@@ -57,6 +57,8 @@ export class AddsocietyexpensesComponent implements OnInit {
   }
 
   saveExpenses() {
-    
+    console.warn(this.requiredForm.value);
+    alert('Society Expenses Added Successfully');
+    this.route.navigateByUrl('/home');
   }
 }
