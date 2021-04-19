@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   ngAfterViewInit(){
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#002b5c';
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = 'url("../../assets/bg-login.png")';
  }
  login(){
    this.route.navigateByUrl('/home');
