@@ -1,0 +1,34 @@
+<ion-content>
+<div style="margin-left:90%;">
+  <ion-label style="color: red;" (click)="skip()">Skip</ion-label>
+</div>
+<img class="logo-img" src="../../assets/logo.png" style="height: fit-content; width: fit-content;">
+
+
+
+
+  <div class="center" >
+
+    <div heading-column-lr>
+      <h1 big-heading>LOGIN</h1>
+    </div>
+
+    <ion-item transparent>
+      <ion-icon name="call-sharp"></ion-icon>
+      <ion-input placeholder="Mobile Number" type="tel" FormControlName="mobileNumber" maxlength="10" minlength="10" >+91&nbsp;&nbsp;</ion-input><br><br>
+    </ion-item>
+
+    <ion-item transparent>
+      <ion-icon name="lock-closed-sharp"></ion-icon>
+      <!--<ion-input [(ngModel)]="Password" placeholder="Password" type="password"></ion-input>-->
+      <ion-input  placeholder="Password" ></ion-input>
+
+    </ion-item>
+
+    <div linespace>
+      <ion-button class="ion-button-class" shape="round" fill="solid"
+      size="large" expand="block"  style="margin-top:10%;font-weight: bold;">LOGIN</ion-button>
+
+    </div>
+  </div>
+</ion-content>

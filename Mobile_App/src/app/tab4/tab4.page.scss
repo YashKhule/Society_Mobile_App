@@ -1,19 +1,50 @@
-ion-content {
-    --ion-background-color: linear-gradient(to top, #bfefff 0%, #ffffff 100%);
+.logo {
+  border-radius: 15px;
+  background-color: #002b5c;
+  text-align: center;
+  color: #fff;
+}
+.orchid {
+  font-size: larger;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
+  color: #007fff;
+  letter-spacing: 1px;
+}
+ion-title {
+  text-align: center;
+}
+
+ion-card {
+  border-radius: 15px;
+  text-align: center;
+  color: #000;
+  box-shadow: 1px 1px 0px 0px;
+}
+.name {
+  background-color: #002b5c;
+  text-align: center;
+  p {
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
   }
-ion-list-header{
-    margin-right: 0.5cm;
-    margin-top: 1cm;
-    text-align: center;
-    font-family: 'Times New Roman';
-    
+  ion-button {
+    color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    font-weight: bold;
   }
-  ion-card{
-    border-radius: 10px 0px 0px 10px;
-    background: -webkit-linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
-  background: -o-linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
-  background: -moz-linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
-  background: linear-gradient(90deg, #14263B 70%, #FFFFFF 70%);
-  
-    }
-  
+}
+.date {
+  text-align: center;
+  //   box-shadow: 2px 2px 2px 2px;
+  p {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 25%;
+  }
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private menu: MenuController,
+              private route: Router) { }
+  openEnd() {  
+    this.menu.close();
+  }
+  loginPage(){
+  this.route.navigateByUrl('/login');
+  }
 
 }
