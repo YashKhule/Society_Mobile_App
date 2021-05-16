@@ -13,8 +13,9 @@ export class Tab1Page {
   openEnd() {  
     this.menu.close();
   }
-  loginPage(){
+  logOut(){
   this.route.navigateByUrl('/login');
   }
+  
 
 }

@@ -1,27 +1,3 @@
-.login-header {
-  position: relative;
-  border-radius: 0em;
-}
-
-.login-header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 15%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-top-color: red;
-  border-bottom: 0;
-  margin-left: -15px;
-  margin-bottom: -15px;
-}
-.logo-img {
-  display: block;
-  width: 120px;
-  margin: 0 auto;
-  text-align: center;
-}
 [heading-column-lr] {
   font-family: georgia !important;
   display: flex;
@@ -30,89 +6,61 @@
 }
 [big-heading] {
   font-family: georgia !important;
-  font-size: 20px !important;
-  color: #fff; //var(--theme-black);
-  //text-decoration: underline;
-  //text-decoration-color:black;
-  text-decoration-thickness: 3%;
+  font-size: 28px !important;
+  color: #002b5c;
+  text-decoration: underline;
+  text-decoration-color: #002b5c;
   padding-left: 15%;
   font-weight: bold;
 }
-[small-heading] {
-  font-family: georgia !important;
-  margin-left: auto;
-  padding-right: 17%;
-  font-size: 20px;
-  font-weight: bold;
-}
-ion-label {
-  color: #fff;
-  opacity: 0.8;
-  font-size: 13px;
-  display: block;
-}
-
 [transparent] {
   --background: "transparent";
 }
 ion-input {
-  --color: #fff;
+  --color: #000;
   --padding-bottom: 15px;
   --padding-top: 15px;
   --padding-start: 5px;
-  font-size: 15px;
-  text-indent: 1px;
-  padding-left: 10px !important;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  // font-weight: bold;
+  // text-indent: 1px;
+  padding-left: 5% !important;
+  letter-spacing: 1px;
   margin-top: 10%;
 }
 ion-icon {
   margin-top: 10%;
-}
-
-[icon-small] {
-  width: 30px;
+  color: #002b5c;
 }
 ion-item {
   --highlight-color-focused: transparent;
   --highlight-height: 0;
-  --highlight-color-invalid: #fff;
+  --highlight-color-invalid: #000;
   --highlight-color-valid: #ddd;
   --min-height: 65px;
   --padding-start: 0;
   padding-left: 15%;
   padding-right: 15%;
 }
-[linespace] {
-  height: 30px;
-}
 ion-label {
-  color: #fff;
+  color: #000;
   opacity: 0.8;
   font-size: 13px;
   display: block;
 }
-
 .ion-button-class {
   font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  --background: red;
+  font-size: 18px;
+  --background: #002b5c;
   padding-left: 15%;
   padding-right: 15%;
-}
-
-.ion-text-center {
-  padding-top: 10px;
-}
-
-h6 {
-  text-align: center;
-  font-family: georgia;
+  margin-top: 10%;
   font-weight: bold;
 }
-button {
-  margin-top: 10%;
-  background-color: white;
-}
-ion-content {
-  --background: url("../../assets/bg-login.png");
+.logo {
+  border-radius: 15px;
+  background-color: #002b5c;
+  text-align: center;
+  color: #fff;
 }

@@ -9,11 +9,6 @@
       </div>
       <div class="header-content">
         
-        <!-- <ion-label class="userName">
-          <h2 >
-            <span class="orchid">ORCHID</span><span class="homes">HOMES</span>
-          </h2>
-        </ion-label> -->
       </div>
       <ion-list class="menu-items" lines="none">
         <!-- <ion-item (click)="openEnd()">
@@ -27,10 +22,6 @@
         </ion-item>
    -->
 
-          <ion-item>
-            <ion-label (click)="loginPage()">Login</ion-label>
-            <ion-icon name="logo-usd"></ion-icon>
-          </ion-item>
         <ion-item (click)="openEnd()">
           <ion-label>Profile</ion-label>
           <ion-icon name="person-circle-outline"></ion-icon>
@@ -41,8 +32,8 @@
           <ion-icon name="logo-usd"></ion-icon>
         </ion-item>
   
-        <ion-item>
-          <ion-label>Logout</ion-label>
+        <ion-item (click)="openEnd()">
+          <ion-label (click)="logOut()">Logout</ion-label>
           <ion-icon name="log-out"></ion-icon>
         </ion-item>
       </ion-list>
