@@ -16,6 +16,10 @@ export class Tab1Page {
   logOut(){
   this.route.navigateByUrl('/login');
   }
+
+  societyExpenses() {
+    this.route.navigateByUrl('/societyexpenses');
+  }
   
 
 }
